@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daniel Narh | Materials scientist</title>
+<meta name="description" content="Daniel Narh studies the structure of crystals and thin films: halide crystals and nitride films at the synchrotron. Erasmus Mundus MSc in Chemical Nanoengineering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F1F4F3;--surface:#E4EAE8;--ink:#12222B;--mute:#4A5D66;--line:#C6D1CF;--acc:#17695B;--cu:#A9532A;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E181B;--surface:#16252A;--ink:#E4ECEA;--mute:#9DB1B1;--line:#26383D;--acc:#58C2AB;--cu:#E08A5B}}
+:root[data-theme="dark"]{--bg:#0E181B;--surface:#16252A;--ink:#E4ECEA;--mute:#9DB1B1;--line:#26383D;--acc:#58C2AB;--cu:#E08A5B}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.65 Newsreader,Georgia,"Times New Roman",serif}
+a{color:var(--acc);text-underline-offset:.2em}
+a:focus-visible,input:focus-visible{outline:3px solid var(--cu);outline-offset:3px;border-radius:3px}
+h1,h2,h3{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;line-height:1.1;margin:0}
+.wrap{max-width:1060px;margin:0 auto;padding:0 clamp(1.25rem,5vw,3rem)}
+nav{padding:1.5rem 0;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;font-family:"Bricolage Grotesque",Arial,sans-serif;font-size:.95rem}
+nav a{color:var(--mute);text-decoration:none}
+nav a:hover{color:var(--acc);text-decoration:underline}
+.hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(1.5rem,5vw,4rem);align-items:center;padding:clamp(1.5rem,5vw,4rem) 0 clamp(3rem,7vw,5.5rem)}
+h1{font-size:clamp(2.8rem,8vw,5.4rem);font-weight:700;letter-spacing:-.03em}
+.lede{font-size:1.28rem;max-width:34ch;margin:1.4rem 0 1rem}
+.where{color:var(--mute);margin:0 0 1.6rem}
+.links{display:flex;flex-wrap:wrap;gap:.6rem}
+.btn{font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:500;font-size:.95rem;padding:.55rem 1rem;border:1.5px solid var(--acc);border-radius:6px;text-decoration:none;color:var(--acc)}
+.btn.main{background:var(--acc);color:var(--bg)}
+.btn:hover{border-color:var(--cu);color:var(--cu)}
+.btn.main:hover{background:var(--cu);border-color:var(--cu);color:var(--bg)}
+figure{margin:0}
+.panel{background:#0B1519;border-radius:10px;padding:10px;border:1px solid var(--line)}
+canvas{display:block;width:100%;height:auto;aspect-ratio:8/7;border-radius:4px;image-rendering:auto}
+figcaption{font-size:.92rem;color:var(--mute);margin-top:.8rem}
+.ctl{display:flex;align-items:center;gap:.8rem;margin-top:.5rem;font-size:.92rem;color:var(--mute)}
+.ctl input{flex:1;accent-color:var(--acc);min-width:0}
+section{border-top:1.5px solid var(--line);padding:clamp(2rem,5vw,3.5rem) 0;display:grid;grid-template-columns:minmax(0,200px) minmax(0,1fr);gap:1.2rem clamp(1.5rem,5vw,4rem)}
+h2{font-size:1.6rem;font-weight:700;letter-spacing:-.015em}
+h3{font-size:1.2rem;font-weight:500;margin-bottom:.3rem}
+.body>*+*{margin-top:1.6rem}
+.body p{margin:0;max-width:66ch}
+.meta{color:var(--mute);font-size:.98rem}
+.tl{list-style:none;margin:0;padding:0 0 0 1.4rem;border-left:2px solid var(--line)}
+.tl>li{position:relative;padding-bottom:1.8rem}
+.tl>li:last-child{padding-bottom:0}
+.tl>li::before{content:"";position:absolute;left:calc(-1.4rem - 6px);top:.55rem;width:10px;height:10px;border-radius:50%;background:var(--acc)}
+.tl .when{font-family:"Bricolage Grotesque",Arial,sans-serif;font-size:.9rem;color:var(--cu);font-weight:500}
+.tl p{margin-top:.4rem}
+ol.pubs{margin:0;padding-left:1.3rem}
+ol.pubs li{padding-left:.3rem;margin-bottom:1.1rem;max-width:68ch}
+.tag{font-family:"Bricolage Grotesque",Arial,sans-serif;font-size:.78rem;border:1px solid var(--line);border-radius:4px;padding:.05rem .4rem;margin-left:.3rem;white-space:nowrap;color:var(--mute)}
+.tag.f{border-color:var(--acc);color:var(--acc)}
+ul.plain{margin:0;padding-left:1.1rem}
+ul.plain li{margin-bottom:.55rem;max-width:68ch}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem}
+.skills h3{font-size:1rem}
+.skills p{font-size:.98rem;color:var(--mute)}
+footer{border-top:1.5px solid var(--line);padding:2rem 0 3rem;color:var(--mute);font-size:.92rem}
+@media (max-width:760px){.hero{grid-template-columns:1fr}section{grid-template-columns:1fr}.lede{max-width:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#research">Research</a><a href="#experience">Experience</a><a href="#publications">Publications</a><a href="#talks">Talks</a><a href="#videos">Videos</a><a href="#honours">Honours</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<div>
+<h1>Daniel Narh</h1>
+<p class="lede">I study how crystals and thin films are built, and what goes wrong in their structure: from halide crystals that change phase with temperature to nitride films mapped at the synchrotron.</p>
+<p class="where">Erasmus Mundus MSc in Chemical Nanoengineering, now at Tor Vergata University of Rome. Open to PhD positions starting 2027.</p>
+<div class="links"><a class="btn main" href="#contact">Get in touch</a><a class="btn" href="https://scholar.google.com/citations?user=jXPI5-0AAAAJ&amp;hl=en">Google Scholar</a><a class="btn" href="https://orcid.org/0009-0008-3076-4606">ORCID</a><a class="btn" href="#videos">Watch my pitch</a></div>
+</div>
+<figure>
+<div class="panel"><canvas id="rsm" width="200" height="175" role="img" aria-label="Simulated reciprocal space map: a sharp substrate peak below a film peak that broadens sideways as mosaicity increases"></canvas></div>
+<div class="ctl"><label for="mos">Mosaicity</label><input id="mos" type="range" min="0" max="100" value="30"><output id="mosout" for="mos">0.3&deg;</output></div>
+<figcaption>A simulated reciprocal space map of a film on a substrate. The sharp lower spot is the substrate; the upper spot is the film, and it spreads sideways as its crystal grains tilt. Drag the slider.</figcaption>
+</figure>
+</header>
+
+<section id="research"><h2>Research</h2><div class="body">
+<div><h3>Hybrid organic-inorganic halide crystals</h3><p>I grow crystals by slow solvent evaporation and follow their structure with ATR-FTIR, X-ray diffraction and Raman spectroscopy. Temperature-dependent Raman shows where each crystal changes phase. Work at INTiBS PAN with Prof. Maciej Ptak.</p></div>
+<div><h3>Nitride thin films at the synchrotron</h3><p>Using reciprocal space maps from ESRF beamline BM02, I analyse epitaxial ScAl(Ga)N films in Python to measure mosaicity and epitaxial quality. Work at IM2NP (CNRS) with Prof. Jacopo Remondina and Dr Thomas Cornelius, and co-author on a manuscript in preparation.</p></div>
+<div><h3>Earlier work</h3><p>At the University of Ghana I worked on nanomaterials for environmental and biomedical uses: superhydrophobic glass coatings, chitosan/zeolite drug carriers, green-synthesised Ag-TiO<sub>2</sub> photocatalysts and natural fibres for oil spill clean-up.</p></div>
+</div></section>
+
+<section id="experience"><h2>Experience</h2><div class="body">
+<ul class="tl">
+<li><span class="when">Jul to Aug 2026</span><h3>Research intern, INTiBS PAN</h3><p class="meta">Optical Spectroscopy Department, Polish Academy of Sciences. Supervisor: Prof. Maciej Ptak.</p><p>Synthesised hybrid halide crystals and characterised them with ATR-FTIR, XRD and Raman, including temperature-dependent Raman to investigate phase transitions.</p></li>
+<li><span class="when">Jan to Feb 2026</span><h3>Research intern, IM2NP (CNRS UMR 7334)</h3><p class="meta">Mechanics of Nano-Objects group, Aix-Marseille University. Supervisors: Prof. Jacopo Remondina and Thomas Walter Cornelius.</p><p>Analysed synchrotron RSM datasets from ESRF BM02 to quantify mosaicity and epitaxial quality of ScAl(Ga)N films. Wrote a reviewed report to guide future interns and presented the results online to teams in Nice and Marseille.</p></li>
+<li><span class="when">Oct 2022 to Sep 2025</span><h3>Research and teaching assistant, University of Ghana</h3><p class="meta">Materials Science and Engineering. Supervisors: Prof. Yaw Delali Bensah, Prof. Emmanuel Nyankson, Prof. Johnson Kwame Efavi.</p><p>Taught tutorials in Thermodynamics and Refractories to more than 350 undergraduates, carried out the laboratory research behind five publications, and mentored seven undergraduate research interns.</p></li>
+<li><span class="when">2017 to 2018</span><h3>Primary teacher, GreenLight Yevan International School</h3><p>Taught mathematics and science to primary school students.</p></li>
+</ul>
+<div><h3>Education</h3>
+<ul class="plain"><li><strong>Erasmus Mundus Joint Master's in Chemical Nanoengineering</strong>, 2025 to 2027. Average 16.33/20, ranked 3rd of 11. Tor Vergata University of Rome (from Sep 2026), Wrocław University of Science and Technology (Mar to Jul 2026), Aix-Marseille University (Sep 2025 to Feb 2026).</li>
+<li><strong>BSc Materials Science and Engineering</strong>, University of Ghana, 2018 to 2022. First Class Honours, GPA 3.75/4.00.</li></ul></div>
+<div class="skills"><div><h3>Characterisation</h3><p>XRD, synchrotron RSM, SEM, light microscopy, FTIR-ATR, UV-Vis, Raman, TGA</p></div><div><h3>Computation</h3><p>Python (NumPy, Matplotlib), ORCA, SIESTA, Gaussian16, Materials Studio, LaTeX</p></div><div><h3>Tools and languages</h3><p>Origin, SolidWorks, ChemDraw, ImageJ. English (native), French (B1)</p></div></div>
+</div></section>
+
+<section id="publications"><h2>Publications</h2><div class="body">
+<p class="meta">37 citations, h-index 3, i10-index 2 on Google Scholar. Five peer-reviewed papers, three as first author.</p>
+<ol class="pubs">
+<li><strong>Narh, D.</strong>, et al. (2025). <a href="https://doi.org/10.1002/admi.202500082">Stability and self-cleaning properties of superhydrophobic nano-coated glass using halloysite nanotubes.</a> <em>Advanced Materials Interfaces.</em> <span class="tag f">First author</span><span class="tag">Q1</span></li>
+<li>Manu, G.P., <strong>Narh, D.</strong>, et al. (2025). <a href="https://doi.org/10.1016/j.sciaf.2025.e02668">Characterization of chitosan/zeolite drug delivery composite and curcumin release kinetics.</a> <em>Scientific African.</em> <span class="tag">Q1</span></li>
+<li><strong>Narh, D.</strong>, et al. (2024). <a href="https://doi.org/10.1155/2024/9169241">Green synthesis of <em>Citrus sinensis</em> extract-mediated Ag-TiO<sub>2</sub> for photocatalytic and antimicrobial applications.</a> <em>Journal of Nanotechnology.</em> <span class="tag f">First author</span><span class="tag">Q2</span></li>
+<li><strong>Narh, D.</strong>, et al. (2024). <a href="http://dx.doi.org/10.7121/msi-eureka-20.29563.1.9">Hf-Pd binary phase diagram evaluation.</a> <em>MSI Eureka.</em> <span class="tag f">First author</span></li>
+<li>Gbogbo, S., <strong>Narh, D.</strong>, et al. (2024). <a href="https://doi.org/10.1080/23311916.2024.2342442">Effects of modified sugarcane and plantain pseudostem fibers for oil spill remediation.</a> <em>Cogent Engineering.</em> <span class="tag">Q2</span></li>
+</ol>
+</div></section>
+
+<section id="talks"><h2>Talks and conferences</h2><div class="body">
+<div><ul class="plain">
+<li>Chemical NanoEngineering Summer School, 15 to 18 June 2026, Poland. <a href="https://drive.google.com/file/d/19mZb5c51W0u_ilb4xoO2XpVEkna4PSqf/view?usp=sharing">Poster</a></li>
+<li>PhoBiA Annual Nanophotonics International Conference, 26 to 27 May 2026, Poland. <a href="https://doi.org/10.37190/panic2026">Abstract</a>, <a href="https://drive.google.com/file/d/1rhMWf1mcT9QaVE4NA-kwS6tmFI4yIk8Y/view?usp=sharing">poster</a></li>
+<li>Lem Next Gen Science Forum, 28 to 29 April 2026, Poland. <a href="https://doi.org/10.37190/LemNextGen_Science_Forum_2026">Abstract</a>, <a href="https://drive.google.com/file/d/1GxLux2nUc7o-3LF97IzbPb2_6XCGnYd4/view?usp=sharing">poster</a></li>
+</ul></div>
+</div></section>
+
+<section id="videos"><h2>Videos</h2><div class="body">
+<div><h3>Elevator pitch</h3><p>A short introduction to me and my research, in my own words.</p><p style="margin-top:.8rem"><a class="btn main" href="https://drive.google.com/file/d/1VrZzZkC8JHk_F7bm44X9i_Swb9q6OxhQ/view?usp=sharing">Watch the pitch</a></p></div>
+<div><h3>Chemical NanoEngineering Summer School presentation</h3><p>My presentation at the summer school in Poland, June 2026.</p><p style="margin-top:.8rem"><a class="btn main" href="https://drive.google.com/file/d/1CPlZLcTPjNwOkvvBL5zVrORPs_nDejy8/view?usp=sharing">Watch the presentation</a></p></div>
+</div></section>
+
+<section id="honours"><h2>Honours and service</h2><div class="body"><ul class="plain">
+<li>Course representative, Erasmus Mundus Chemical Nanoengineering, cohort 8 (2025 to 2027)</li>
+<li>Erasmus+ scholar, honoured by the EU Ambassador to Ghana with 30 other Ghanaian students (2025). <a href="https://ghanaiantimes.com.gh/eu-awards-30-scholarships-to-ghanaian-students/">News report</a></li>
+<li>Best Graduating Student, Department of Materials Science and Engineering, University of Ghana (2023)</li>
+<li>Nominated for valedictorian, College of Basic and Applied Sciences, University of Ghana (2023)</li>
+<li>Deputy Academic Committee Head, School of Engineering Sciences, University of Ghana (2021/2022)</li>
+<li>Member, African Materials Research Society (2019 to 2025)</li></ul></div></section>
+
+<section id="contact"><h2>Contact</h2><div class="body"><p>I am happy to talk about research collaborations and PhD opportunities.</p>
+<div class="links"><a class="btn main" href="mailto:daniel.narh005@gmail.com">daniel.narh005@gmail.com</a><a class="btn" href="https://linkedin.com/in/daniel-narh">LinkedIn</a><a class="btn" href="https://www.researchgate.net/profile/Daniel-Narh-5/research">ResearchGate</a><a class="btn" href="https://scholar.google.com/citations?user=jXPI5-0AAAAJ&amp;hl=en">Google Scholar</a><a class="btn" href="https://orcid.org/0009-0008-3076-4606">ORCID</a></div></div></section>
+<footer>&copy; 2026 Daniel Narh</footer>
+</div>
+<script>
+(function(){
+var cv=document.getElementById('rsm'),ctx=cv.getContext('2d'),W=cv.width,H=cv.height,img=ctx.createImageData(W,H);
+var inp=document.getElementById('mos'),out=document.getElementById('mosout');
+var noise=new Float32Array(W*H),s=7;for(var i=0;i<noise.length;i++){s=(s*16807)%2147483647;noise[i]=s/2147483647}
+var stops=[[0,[11,21,25]],[.28,[18,92,84]],[.58,[88,194,171]],[.8,[224,138,91]],[1,[250,238,220]]];
+function cmap(t){t=Math.max(0,Math.min(1,t));for(var i=1;i<stops.length;i++){if(t<=stops[i][0]){var a=stops[i-1],b=stops[i],f=(t-a[0])/(b[0]-a[0]);return[a[1][0]+(b[1][0]-a[1][0])*f,a[1][1]+(b[1][1]-a[1][1])*f,a[1][2]+(b[1][2]-a[1][2])*f]}}return stops[4][1]}
+function g(d,sg){return Math.exp(-d*d/(2*sg*sg))}
+function draw(){
+var m=inp.value/100,sx=.008+m*.11;out.textContent=(m*1.5).toFixed(1)+'\u00b0';
+for(var y=0;y<H;y++){var v=y/H;for(var x=0;x<W;x++){var u=x/W;
+var I=1.0*g(u-.5,.012)*g(v-.68,.014)
++.75*g(u-.5,sx)*g(v-.34,.02)*(.8/(1+m*3))*(1+m*1.2)
++.18*g(u-.5,.004)*(v<.68?1:.25)*(.4+.6*g(v-.5,.3))
++.1*g(u-.5,sx*2.2)*g(v-.34,.05);
+var t=Math.log(1+I*400)/Math.log(401)+(noise[y*W+x]-.5)*.05;
+var c=cmap(t),k=(y*W+x)*4;img.data[k]=c[0];img.data[k+1]=c[1];img.data[k+2]=c[2];img.data[k+3]=255}}
+ctx.putImageData(img,0,0)}
+inp.addEventListener('input',draw);draw();
+})();
+</script>
+</body>
+</html>
