@@ -28,7 +28,7 @@ h1{font-size:clamp(2.8rem,8vw,5.4rem);font-weight:700;letter-spacing:-.03em}
 .lede{font-size:1.28rem;max-width:34ch;margin:1.4rem 0 1rem}
 .where{color:var(--mute);margin:0 0 1.6rem}
 .links{display:flex;flex-wrap:wrap;gap:.6rem}
-.btn{font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:500;font-size:.95rem;padding:.55rem 1rem;border:1.5px solid var(--acc);border-radius:6px;text-decoration:none;color:var(--acc);display:inline-flex;align-items:center;justify-content:center}
+.btn{font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:500;font-size:.95rem;padding:.55rem 1rem;border:1.5px solid var(--acc);border-radius:6px;text-decoration:none;color:var(--acc);display:inline-flex;align-items:center;justify-content:center;max-width:100%;text-align:center;overflow-wrap:anywhere}
 .btn.main{background:var(--acc);color:var(--bg)}
 .btn:hover{border-color:var(--cu);color:var(--cu)}
 .btn.main:hover{background:var(--cu);border-color:var(--cu);color:var(--bg)}
@@ -38,9 +38,10 @@ canvas{display:block;width:100%;height:auto;aspect-ratio:8/7;border-radius:4px;i
 figcaption{font-size:.92rem;color:var(--mute);margin-top:.8rem}
 .ctl{display:flex;align-items:center;gap:.8rem;margin-top:.5rem;font-size:.92rem;color:var(--mute)}
 .ctl input{flex:1;accent-color:var(--acc);min-width:0}
-section{border-top:1.5px solid var(--line);padding:clamp(2rem,5vw,3.5rem) 0;display:grid;grid-template-columns:minmax(0,200px) minmax(0,1fr);gap:1.2rem clamp(1.5rem,5vw,4rem)}
+section{border-top:1.5px solid var(--line);padding:clamp(2rem,5vw,3.5rem) 0;display:grid;grid-template-columns:minmax(0,200px) minmax(0,1fr);gap:1.2rem clamp(1.5rem,5vw,4rem);align-items:start}
 h2{font-size:1.6rem;font-weight:700;letter-spacing:-.015em}
 h3{font-size:1.2rem;font-weight:500;margin-bottom:.3rem}
+.body{min-width:0}
 .body>*+*{margin-top:1.6rem}
 .body p{margin:0;max-width:66ch}
 .meta{color:var(--mute);font-size:.98rem}
@@ -120,7 +121,6 @@ footer{border-top:1.5px solid var(--line);padding:2rem 0 3rem;color:var(--mute);
 </ul></div>
 </div></section>
 
-
 <section id="publications"><h2>Publications</h2><div class="body">
 <p class="meta">Five peer-reviewed publications, including three as first author.</p>
 <ol class="pubs">
@@ -133,12 +133,11 @@ footer{border-top:1.5px solid var(--line);padding:2rem 0 3rem;color:var(--mute);
 </div></section>
 
 <section id="talks"><h2>Talks and conferences</h2><div class="body">
-<div><ul class="plain">
+<ul class="plain">
 <li>Chemical NanoEngineering Summer School, June 2026, Poland. <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/19mZb5c51W0u_ilb4xoO2XpVEkna4PSqf/view?usp=sharing">Poster</a></li>
 <li>PhoBiA Annual Nanophotonics International Conference, page 64, May 2026, Poland. <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.37190/panic2026">Abstract</a></li>
 <li>Lem Next Gen Science Forum, page 121, April 2026, Poland. <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.37190/LemNextGen_Science_Forum_2026">Abstract</a></li>
-</ul></div>
-</ul></div>
+</ul>
 </div></section>
 
 <section id="videos"><h2>Videos</h2><div class="body">
@@ -156,7 +155,7 @@ footer{border-top:1.5px solid var(--line);padding:2rem 0 3rem;color:var(--mute);
 <li>Deputy Academic Committee Head, School of Engineering Sciences, University of Ghana (2021–2022)</li>
 </ul></div></section>
 -->
-  
+
 <section id="contact"><h2>Contact</h2><div class="body"><p>I welcome conversations about research collaborations and PhD opportunities.</p>
 <div class="links"><a class="btn main" target="_blank" rel="noopener noreferrer" href="mailto:daniel.narh005@gmail.com">daniel.narh005@gmail.com</a><a class="btn" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/daniel-narh">LinkedIn</a><a class="btn" target="_blank" rel="noopener noreferrer" href="https://www.researchgate.net/profile/Daniel-Narh-5/research">ResearchGate</a><a class="btn" target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=jXPI5-0AAAAJ&amp;hl=en">Google Scholar</a><a class="btn" target="_blank" rel="noopener noreferrer" href="https://orcid.org/0009-0008-3076-4606">ORCID</a></div></div></section>
 <footer>&copy; 2026 Daniel Narh</footer>
